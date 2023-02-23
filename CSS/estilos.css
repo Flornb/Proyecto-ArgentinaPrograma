@@ -1,0 +1,36 @@
+/**aqui van los estilos
+*/
+*{
+    color:blue;
+}
+/* el asterico aplica a todo el doc, pero si la propiedad ya existe dentro del tag, no se aplicara*/
+
+h1 {
+    color: blueviolet;
+    text-align: center;
+    width: 350px;
+    border: 2px solid rgb(150, 38, 56);
+    background-color: pink;
+    padding: 5px;
+    margin: 30px;
+    
+}
+
+h3 {
+    font-family: 'Shantell Sans', cursive;
+    color: green;
+    text-align: center;
+    width: 300px;
+    background-color: rgb(96, 177, 72);
+    border: 1px solid rgba(0, 128, 0, 0.308);
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+
+#unicoid {
+    color: red;
+    background-color: black;
+}
+/*  accediendo al p por el id del tag p*/
