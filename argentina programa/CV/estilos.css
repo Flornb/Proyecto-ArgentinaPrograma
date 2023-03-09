@@ -1,0 +1,350 @@
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Titillium+Web:wght@300&display=swap');
+*{
+    font-family: "Titillium Web";
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* home section */
+.home{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://img.freepik.com/foto-gratis/trabajadora-rosa-escritorio-cuaderno-vacio_23-2148404502.jpg?w=740&t=st=1678203101~exp=1678203701~hmac=3798d6b2204048557c9b0d5100fc624aa5e0907464e4d131b01e19617da47447");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+.home .home-content{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.home .home-content header{
+    padding: 30px;
+}
+/* lateral menu */
+.home .home-content header nav{
+    position: fixed;
+    margin-left: 60px;
+    background-color: #495867;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+.home .home-content header nav a{
+    display: block;
+    color: #ecc8af;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.home .home-content header .logo{
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: "Caveat";
+    text-shadow: 0 0 35px #495867;
+}
+.home .home-content header .logo .color{
+    color: #495867;
+    font-family: "Caveat";
+}
+.home .home-content header .nav-bar{
+    position: fixed;
+    background-color: #495867;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+.home .home-content header .nav-bar:hover{
+    box-shadow: 0 0 35px #ecc8af;
+}
+.home .home-content .info{
+    padding-bottom: 130px;
+}
+.home .home-content .info h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+.home .home-content .info h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+.home .home-content .info .networks{
+    margin: 20px 0;
+}
+.home .home-content .info .networks a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #495867;
+    color: #e7ad99;
+    border: 1px solid #e7ad99;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+}
+.home .home-content .info .networks a:hover{
+    color: #ecc8af;
+    background-color: #ce796b;
+    box-shadow: 0 0 20px #ecc8af;
+}
+.home .home-content .picture{
+    position: relative;
+}
+.home .home-content .picture img{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 7px solid #495867;
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translateX(-50%);
+}
+/* General styles */
+.title-section{
+    font-family: "Caveat";
+    font-size: 1.5rem;
+}
+/* ABOUT ME SECTION */
+.aboutme{
+    background-color: #6d6875;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.aboutme .content-section{
+    max-width: 1000px;
+    margin: auto;
+    padding: 1 10px;
+}
+.aboutme .content-section h3{
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.aboutme .content-section .special{
+    color: black;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.aboutme .content-section p{
+    max-width: 700px;
+    margin: auto;
+    color: #181717;
+}
+.aboutme .content-section .row{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.aboutme .content-section .row .col{
+    width: 30%;
+}
+.aboutme .content-section .row .col i{
+    color: white;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.aboutme .content-section .row .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+/* SKILSS SECTION */
+.skills {
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://img.freepik.com/premium-photo/grey-laptop-grey-background_237502-159.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    color: #fff;
+}
+.skills .content-section{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.skills .content-section h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.skills .content-section .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.skills .content-section .row .col{
+    width: 47%;
+    text-align: left;
+} 
+.skills .content-section .row .col .bar-content{
+    display: flex;
+    align-items: center;
+}
+.skills .content-section .row .col .bar{
+    display: flex;
+    border: 4px solid #495867;
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.skills .content-section .bar .e{
+    background-color: #E7AD99;
+    width: 10px;
+    height: 20px;
+    margin-right: 2px;
+}
+/*  RESUME SECTION */
+.resume{
+    background-color: #E7AD99;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.resume .content-section{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.resume .content-section h3{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.resume .content-section .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.resume .content-section .info .col{
+    width: 40%;
+}
+.resume .content-section .info .col .title{
+    display: block;
+    color: #495867;
+    font-weight: bold;
+    border: 2px solid #495867;
+    padding: 10px;
+    text-align: center;
+}
+.resume .content-section .info .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.resume .content-section .info .col table .data{
+    width: 40%;
+    border-bottom: 1px solid #495867;
+}
+.resume .content-section .info .col table h4{
+    margin-top: 10px;
+}
+.resume .content-section .info .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.resume .content-section .info .col table p{
+    font-size: 14px;
+}
+.resume .content-section .info .col table .description{
+    border-left: 1px solid #495867;
+    padding: 20px;
+}
+/* contact section */
+.contact-information{
+    background-color: #495867;
+    padding: 140px 0 100px 0;
+    color: #ECC8AF;
+    text-align: center;
+}
+.contact-information .content-section{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contact-information .content-section h3{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.contact-information .content-section .row{
+    display: flex;
+    justify-content: space-around;
+}
+.contact-information .content-section .row .col{
+    margin-top: 50px;
+}
+.contact-information .content-section .row .col h2{
+    color: #CE796B;
+}
+/* RESPONSIVE SECTION */
+@media screen and (max-width:800px){
+    .skills .content-section .row{
+        display: block;
+    }
+    .skills .content-section .row .col {
+        width: 100%;
+        text-align: center;
+    }
+    .skills .content-section .row .col .bar-content{
+        justify-content: center;
+    }
+    .aboutme .content-section .row {
+        display: block;
+    }
+    .aboutme .content-section .row .col {
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+    } 
+    .resume .content-section .info .col{
+        width: 90%;
+        margin: auto;
+    }
+    .resume .content-section .info .col .title{
+        width: 100%;
+        text-align: center;
+    }
+    .resume .content-section .info .col table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .contact-information .content-section .row{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
